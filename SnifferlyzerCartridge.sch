@@ -1,13 +1,14 @@
 EESchema Schematic File Version 4
+LIBS:SnifferlyzerCartridge-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Supercon 2019 Badge Cartridge Template"
+Title "Snifferlyzer Cartridge for Supercon 2019 Badge"
 Date ""
 Rev ""
-Comp "Template designed by: @thomasflummer"
+Comp "Designed by: @thomasflummer"
 Comment1 "License: CC-BY-SA"
 Comment2 ""
 Comment3 ""
@@ -222,4 +223,339 @@ Wire Wire Line
 	2000 1150 2000 1200
 Wire Wire Line
 	2000 1500 2000 1550
+$Comp
+L SuperconCartridge:74LCX16245 U2
+U 1 1 5DBE80A2
+P 7900 3550
+F 0 "U2" H 7900 3550 50  0000 C CNN
+F 1 "74LCX16245" H 7900 4150 50  0000 C CNN
+F 2 "Housings_SSOP:TSSOP-48_6.1x12.5mm_Pitch0.5mm" H 7900 3550 50  0001 C CNN
+F 3 "" H 7900 3550 50  0001 C CNN
+	1    7900 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x10_Male J2
+U 1 1 5DBEB0E7
+P 5150 3000
+F 0 "J2" H 5258 3581 50  0000 C CNN
+F 1 "Conn_01x10_Male" H 5258 3490 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x10_Pitch2.54mm" H 5150 3000 50  0001 C CNN
+F 3 "~" H 5150 3000 50  0001 C CNN
+	1    5150 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x10_Male J3
+U 1 1 5DBECD31
+P 5150 4100
+F 0 "J3" H 5258 4681 50  0000 C CNN
+F 1 "Conn_01x10_Male" H 5258 4590 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x10_Pitch2.54mm" H 5150 4100 50  0001 C CNN
+F 3 "~" H 5150 4100 50  0001 C CNN
+	1    5150 4100
+	1    0    0    -1  
+$EndComp
+Text GLabel 5350 2600 2    50   Input ~ 0
+IOA1
+Text GLabel 5350 2700 2    50   Input ~ 0
+IOA2
+Text GLabel 5350 2800 2    50   Input ~ 0
+IOA3
+Text GLabel 5350 2900 2    50   Input ~ 0
+IOA4
+Text GLabel 5350 3000 2    50   Input ~ 0
+IOA5
+Text GLabel 5350 3100 2    50   Input ~ 0
+IOA6
+Text GLabel 5350 3200 2    50   Input ~ 0
+IOA7
+Text GLabel 5350 3300 2    50   Input ~ 0
+IOA8
+Text GLabel 5350 3700 2    50   Input ~ 0
+IOB1
+Text GLabel 5350 3800 2    50   Input ~ 0
+IOB2
+Text GLabel 5350 3900 2    50   Input ~ 0
+IOB3
+Text GLabel 5350 4000 2    50   Input ~ 0
+IOB4
+Text GLabel 5350 4100 2    50   Input ~ 0
+IOB5
+Text GLabel 5350 4200 2    50   Input ~ 0
+IOB6
+Text GLabel 5350 4300 2    50   Input ~ 0
+IOB7
+Text GLabel 5350 4400 2    50   Input ~ 0
+IOB8
+Text GLabel 8500 2800 2    50   Input ~ 0
+IOA1
+Text GLabel 8500 2900 2    50   Input ~ 0
+IOA2
+Text GLabel 8500 3000 2    50   Input ~ 0
+IOA3
+Text GLabel 8500 3100 2    50   Input ~ 0
+IOA4
+Text GLabel 8500 3200 2    50   Input ~ 0
+IOA5
+Text GLabel 8500 3300 2    50   Input ~ 0
+IOA6
+Text GLabel 8500 3400 2    50   Input ~ 0
+IOA7
+Text GLabel 8500 3500 2    50   Input ~ 0
+IOA8
+Text GLabel 8500 3600 2    50   Input ~ 0
+IOB1
+Text GLabel 8500 3700 2    50   Input ~ 0
+IOB2
+Text GLabel 8500 3800 2    50   Input ~ 0
+IOB3
+Text GLabel 8500 3900 2    50   Input ~ 0
+IOB4
+Text GLabel 8500 4000 2    50   Input ~ 0
+IOB5
+Text GLabel 8500 4100 2    50   Input ~ 0
+IOB6
+Text GLabel 8500 4200 2    50   Input ~ 0
+IOB7
+Text GLabel 8500 4300 2    50   Input ~ 0
+IOB8
+$Comp
+L power:GND #PWR09
+U 1 1 5DC0C953
+P 5800 3650
+F 0 "#PWR09" H 5800 3400 50  0001 C CNN
+F 1 "GND" V 5805 3522 50  0000 R CNN
+F 2 "" H 5800 3650 50  0001 C CNN
+F 3 "" H 5800 3650 50  0001 C CNN
+	1    5800 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5DC0D283
+P 5800 4750
+F 0 "#PWR010" H 5800 4500 50  0001 C CNN
+F 1 "GND" V 5805 4622 50  0000 R CNN
+F 2 "" H 5800 4750 50  0001 C CNN
+F 3 "" H 5800 4750 50  0001 C CNN
+	1    5800 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 3400 5800 3400
+Wire Wire Line
+	5350 3500 5800 3500
+Wire Wire Line
+	5800 3400 5800 3500
+Connection ~ 5800 3500
+Wire Wire Line
+	5800 3500 5800 3650
+Wire Wire Line
+	5350 4500 5800 4500
+Wire Wire Line
+	5350 4600 5800 4600
+Wire Wire Line
+	5800 4500 5800 4600
+Connection ~ 5800 4600
+Wire Wire Line
+	5800 4600 5800 4750
+$Comp
+L power:GND #PWR014
+U 1 1 5DC0E47F
+P 7900 5050
+F 0 "#PWR014" H 7900 4800 50  0001 C CNN
+F 1 "GND" V 7905 4922 50  0000 R CNN
+F 2 "" H 7900 5050 50  0001 C CNN
+F 3 "" H 7900 5050 50  0001 C CNN
+	1    7900 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 4850 7550 4950
+Wire Wire Line
+	7550 4950 7650 4950
+Wire Wire Line
+	8250 4950 8250 4850
+Wire Wire Line
+	7650 4850 7650 4950
+Connection ~ 7650 4950
+Wire Wire Line
+	7650 4950 7750 4950
+Wire Wire Line
+	7750 4850 7750 4950
+Connection ~ 7750 4950
+Wire Wire Line
+	7750 4950 7850 4950
+Wire Wire Line
+	7850 4850 7850 4950
+Connection ~ 7850 4950
+Wire Wire Line
+	7950 4850 7950 4950
+Connection ~ 7950 4950
+Wire Wire Line
+	7950 4950 8050 4950
+Wire Wire Line
+	8050 4850 8050 4950
+Connection ~ 8050 4950
+Wire Wire Line
+	8050 4950 8150 4950
+Wire Wire Line
+	8150 4850 8150 4950
+Connection ~ 8150 4950
+Wire Wire Line
+	8150 4950 8250 4950
+Wire Wire Line
+	7750 2250 7750 2150
+Wire Wire Line
+	7750 2150 7850 2150
+Wire Wire Line
+	8050 2150 8050 2250
+Wire Wire Line
+	7850 2250 7850 2150
+Connection ~ 7850 2150
+Wire Wire Line
+	7850 2150 7900 2150
+Wire Wire Line
+	7950 2250 7950 2150
+Connection ~ 7950 2150
+Wire Wire Line
+	7950 2150 8050 2150
+$Comp
+L power:+3V3 #PWR013
+U 1 1 5DC12559
+P 7900 2050
+F 0 "#PWR013" H 7900 1900 50  0001 C CNN
+F 1 "+3V3" H 7915 2223 50  0000 C CNN
+F 2 "" H 7900 2050 50  0001 C CNN
+F 3 "" H 7900 2050 50  0001 C CNN
+	1    7900 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 2050 7900 2150
+Connection ~ 7900 2150
+Wire Wire Line
+	7900 2150 7950 2150
+Wire Wire Line
+	7850 4950 7900 4950
+Wire Wire Line
+	7900 5050 7900 4950
+Connection ~ 7900 4950
+Wire Wire Line
+	7900 4950 7950 4950
+Text GLabel 8500 2600 2    50   Input ~ 0
+GENIO1
+Text GLabel 7300 2600 0    50   Input ~ 0
+GENIO2
+Text GLabel 7300 2800 0    50   Input ~ 0
+GENIO3
+Text GLabel 7300 2900 0    50   Input ~ 0
+GENIO4
+Text GLabel 7300 3000 0    50   Input ~ 0
+GENIO5
+Text GLabel 7300 3100 0    50   Input ~ 0
+GENIO6
+Text GLabel 7300 3200 0    50   Input ~ 0
+GENIO7
+Text GLabel 7300 3300 0    50   Input ~ 0
+GENIO8
+Text GLabel 7300 3400 0    50   Input ~ 0
+GENIO9
+Text GLabel 7300 3500 0    50   Input ~ 0
+GENIO10
+Text GLabel 7300 3600 0    50   Input ~ 0
+GENIO11
+Text GLabel 7300 3700 0    50   Input ~ 0
+GENIO12
+Text GLabel 7300 3800 0    50   Input ~ 0
+GENIO13
+Text GLabel 7300 3900 0    50   Input ~ 0
+GENIO14
+Text GLabel 7300 4000 0    50   Input ~ 0
+GENIO15
+Text GLabel 7300 4100 0    50   Input ~ 0
+GENIO16
+Text GLabel 7300 4200 0    50   Input ~ 0
+GENIO17
+Text GLabel 7300 4300 0    50   Input ~ 0
+GENIO18
+Text GLabel 7300 4500 0    50   Input ~ 0
+GENIO19
+Text GLabel 8500 4500 2    50   Input ~ 0
+GENIO20
+$Comp
+L device:C C2
+U 1 1 5DC19EC6
+P 7600 1250
+F 0 "C2" H 7715 1296 50  0000 L CNN
+F 1 "100nF" H 7715 1205 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7638 1100 50  0001 C CNN
+F 3 "~" H 7600 1250 50  0001 C CNN
+	1    7600 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR011
+U 1 1 5DC19ECC
+P 7600 1050
+F 0 "#PWR011" H 7600 900 50  0001 C CNN
+F 1 "+3V3" H 7615 1223 50  0000 C CNN
+F 2 "" H 7600 1050 50  0001 C CNN
+F 3 "" H 7600 1050 50  0001 C CNN
+	1    7600 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 5DC19ED2
+P 7600 1450
+F 0 "#PWR012" H 7600 1200 50  0001 C CNN
+F 1 "GND" V 7605 1322 50  0000 R CNN
+F 2 "" H 7600 1450 50  0001 C CNN
+F 3 "" H 7600 1450 50  0001 C CNN
+	1    7600 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 1050 7600 1100
+Wire Wire Line
+	7600 1400 7600 1450
+$Comp
+L device:C C3
+U 1 1 5DC1BA88
+P 8150 1250
+F 0 "C3" H 8265 1296 50  0000 L CNN
+F 1 "100nF" H 8265 1205 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8188 1100 50  0001 C CNN
+F 3 "~" H 8150 1250 50  0001 C CNN
+	1    8150 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR015
+U 1 1 5DC1BA8E
+P 8150 1050
+F 0 "#PWR015" H 8150 900 50  0001 C CNN
+F 1 "+3V3" H 8165 1223 50  0000 C CNN
+F 2 "" H 8150 1050 50  0001 C CNN
+F 3 "" H 8150 1050 50  0001 C CNN
+	1    8150 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5DC1BA94
+P 8150 1450
+F 0 "#PWR016" H 8150 1200 50  0001 C CNN
+F 1 "GND" V 8155 1322 50  0000 R CNN
+F 2 "" H 8150 1450 50  0001 C CNN
+F 3 "" H 8150 1450 50  0001 C CNN
+	1    8150 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 1050 8150 1100
+Wire Wire Line
+	8150 1400 8150 1450
 $EndSCHEMATC

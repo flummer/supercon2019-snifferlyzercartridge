@@ -1,5 +1,7 @@
 # Snifferlyzer Cartridge for the 2019 Hackaday Superconference Badge
 
+![Snifferlyzer Cartridge render](https://github.com/flummer/supercon2019-snifferlyzercartridge/raw/master/IMAGES/front_back_render.png "Snifferlyzer Cartridge render")
+
 The Snifferlyzer is a simple cartridge to provide a buffered input and allow logic analyzer functionality
 
 ## License
