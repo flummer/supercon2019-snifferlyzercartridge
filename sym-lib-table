@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name X)(type Legacy)(uri /Users/tf/Downloads/kicad-xlib-master/symbols/X.lib)(options "")(descr ""))
+  (lib (name SuperconCartridge)(type Legacy)(uri ${KIPRJMOD}/SuperconCartridge.lib)(options "")(descr ""))
+)
