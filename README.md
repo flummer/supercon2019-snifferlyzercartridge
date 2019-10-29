@@ -2,7 +2,9 @@
 
 ![Snifferlyzer Cartridge render](https://github.com/flummer/supercon2019-snifferlyzercartridge/raw/master/IMAGES/front_back_render.png "Snifferlyzer Cartridge render")
 
-The Snifferlyzer is a simple cartridge to provide a buffered input and allow logic analyzer functionality
+The Snifferlyzer is a simple cartridge that provides a buffered input to allow logic analyzer functionality. It's using the OnSemi 74LCX16245, that has 5V tolerant inputs and the configuration pins for the transceiver is also hooked up to the badge, allowing full control over the direction of the two 8bit banks.
+
+This cartridge is based on the [unofficial Superconference 2019 Badge Cartridge template](https://github.com/flummer/supercon2019-cartridgetemplate) and hence include the w25q128 SPI flash and a 100nF cap in addition to the 2x20 pin angled male pin header for the badge connection. The flash allows badge configurations and firmware specific to this cartridge to be loaded from the cartridge it self making it selfcontained.
 
 ## License
 
