@@ -1,6 +1,5 @@
-EESchema Schematic File Version 4
-LIBS:SnifferlyzerCartridge-cache
-EELAYER 29 0
+EESchema Schematic File Version 5
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -13,6 +12,11 @@ Comment1 "License: CC-BY-SA"
 Comment2 ""
 Comment3 ""
 Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
 $EndDescr
 $Comp
 L Connector:Conn_01x40_Male J1
@@ -28,57 +32,57 @@ $EndComp
 $Comp
 L power:GND #PWR01
 U 1 1 5D9C2B6C
-P 1300 1100
-F 0 "#PWR01" H 1300 850 50  0001 C CNN
-F 1 "GND" V 1305 972 50  0000 R CNN
-F 2 "" H 1300 1100 50  0001 C CNN
-F 3 "" H 1300 1100 50  0001 C CNN
-	1    1300 1100
+P 1300 1200
+F 0 "#PWR01" H 1300 950 50  0001 C CNN
+F 1 "GND" V 1305 1072 50  0000 R CNN
+F 2 "" H 1300 1200 50  0001 C CNN
+F 3 "" H 1300 1200 50  0001 C CNN
+	1    1300 1200
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+3V3 #PWR02
 U 1 1 5D9C3D7F
-P 1300 1200
-F 0 "#PWR02" H 1300 1050 50  0001 C CNN
-F 1 "+3V3" V 1315 1328 50  0000 L CNN
-F 2 "" H 1300 1200 50  0001 C CNN
-F 3 "" H 1300 1200 50  0001 C CNN
-	1    1300 1200
+P 1300 1100
+F 0 "#PWR02" H 1300 950 50  0001 C CNN
+F 1 "+3V3" V 1315 1228 50  0000 L CNN
+F 2 "" H 1300 1100 50  0001 C CNN
+F 3 "" H 1300 1100 50  0001 C CNN
+	1    1300 1100
 	0    1    1    0   
 $EndComp
-Text GLabel 1300 1300 2    50   Input ~ 0
-F_HOLD
 Text GLabel 1300 1400 2    50   Input ~ 0
+F_HOLD
+Text GLabel 1300 1300 2    50   Input ~ 0
 F_CS
-Text GLabel 1300 1500 2    50   Input ~ 0
-F_SCK
 Text GLabel 1300 1600 2    50   Input ~ 0
+F_SCK
+Text GLabel 1300 1500 2    50   Input ~ 0
 F_MISO
-Text GLabel 1300 1700 2    50   Input ~ 0
-F_MOSI
 Text GLabel 1300 1800 2    50   Input ~ 0
+F_MOSI
+Text GLabel 1300 1700 2    50   Input ~ 0
 F_WP
 $Comp
 L power:+BATT #PWR06
 U 1 1 5D9C7330
-P 1300 5000
-F 0 "#PWR06" H 1300 4850 50  0001 C CNN
-F 1 "+BATT" V 1315 5128 50  0000 L CNN
-F 2 "" H 1300 5000 50  0001 C CNN
-F 3 "" H 1300 5000 50  0001 C CNN
-	1    1300 5000
+P 1300 4900
+F 0 "#PWR06" H 1300 4750 50  0001 C CNN
+F 1 "+BATT" V 1315 5028 50  0000 L CNN
+F 2 "" H 1300 4900 50  0001 C CNN
+F 3 "" H 1300 4900 50  0001 C CNN
+	1    1300 4900
 	0    1    1    0   
 $EndComp
 $Comp
 L power:+5V #PWR05
 U 1 1 5D9C7C1B
-P 1300 4900
-F 0 "#PWR05" H 1300 4750 50  0001 C CNN
-F 1 "+5V" V 1315 5028 50  0000 L CNN
-F 2 "" H 1300 4900 50  0001 C CNN
-F 3 "" H 1300 4900 50  0001 C CNN
-	1    1300 4900
+P 1300 5000
+F 0 "#PWR05" H 1300 4850 50  0001 C CNN
+F 1 "+5V" V 1315 5128 50  0000 L CNN
+F 2 "" H 1300 5000 50  0001 C CNN
+F 3 "" H 1300 5000 50  0001 C CNN
+	1    1300 5000
 	0    1    1    0   
 $EndComp
 Text GLabel 1300 1900 2    50   Input ~ 0

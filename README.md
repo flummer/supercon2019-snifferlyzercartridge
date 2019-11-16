@@ -6,6 +6,14 @@ The Snifferlyzer is a simple cartridge that provides a buffered input to allow l
 
 This cartridge is based on the [unofficial Superconference 2019 Badge Cartridge template](https://github.com/flummer/supercon2019-cartridgetemplate) and hence include the w25q128 SPI flash and a 100nF cap in addition to the 2x20 pin angled male pin header for the badge connection. The flash allows badge configurations and firmware specific to this cartridge to be loaded from the cartridge it self making it selfcontained.
 
+## Version 1.2 update
+
+This updated version fixes an error in the pin connections on the cartridge connector (the two columns was flipped for some signals).
+
+## Special note about the original version
+
+If you want to use a PCB based on the original version with incorrect connections, it is possible to make a hardware hack on the 20x2 angeled header, where you move the pins around and bend some of them a bit, very precisely.
+
 ## License
 
 The contents of this repository is released under the following licence:
